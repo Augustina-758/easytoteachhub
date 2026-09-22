@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Easy to Teach Hub</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;background:#f5f7fb;color:#1f2937}
+header{background:#173f5f;color:white;padding:22px 7%;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+.logo{font-size:25px;font-weight:700}
+nav a{color:white;text-decoration:none;margin:0 8px;font-size:14px}
+.hero{text-align:center;padding:60px 7%;background:white}
+.hero h1{font-size:42px;margin:0 0 12px}
+.hero p{font-size:18px;color:#5b6470;max-width:650px;margin:0 auto 25px;line-height:1.6}
+.search{max-width:650px;margin:auto;display:flex}
+.search input{flex:1;padding:15px;border:1px solid #ccd3dc;border-radius:8px 0 0 8px;font-size:16px}
+.search button{padding:15px 22px;border:0;border-radius:0 8px 8px 0;background:#f2b134;color:#111;font-weight:bold}
+section{padding:45px 7%;max-width:1200px;margin:auto}
+h2{text-align:center;margin-bottom:28px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:18px}
+.card{background:white;padding:25px;border-radius:12px;text-align:center;box-shadow:0 3px 12px #00000010}
+.card h3{margin:10px 0 6px}
+.card p{color:#667085;font-size:14px;line-height:1.5}
+.icon{font-size:32px}
+.note{background:white;padding:25px;border-radius:12px;line-height:1.7}
+footer{background:#173f5f;color:white;text-align:center;padding:25px;margin-top:30px}
+@media(max-width:600px){.hero h1{font-size:32px}nav{width:100%}.search{display:block}.search input,.search button{width:100%;border-radius:8px;margin:4px 0}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">📚 Easy to Teach Hub</div>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#notes">Lesson Notes</a>
+    <a href="#schemes">Schemes</a>
+    <a href="#exams">WAEC/JAMB</a>
+    <a href="#about">About</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <h1>Easy to Teach Hub</h1>
+  <p>Making Teaching and Learning Easier with well-structured lesson notes, schemes of work, exercises and educational resources.</p>
+  <div class="search">
+    <input type="text" placeholder="Search for a lesson note...">
+    <button>Search</button>
+  </div>
+</div>
+
+<section id="notes">
+  <h2>Explore Subjects</h2>
+  <div class="cards">
+    <div class="card"><div class="icon">📖</div><h3>English Language</h3><p>Lesson notes, grammar, exercises and answers.</p></div>
+    <div class="card"><div class="icon">🌍</div><h3>Geography</h3><p>Secondary school Geography notes and activities.</p></div>
+    <div class="card"><div class="icon">🏛️</div><h3>Government</h3><p>Clear notes, examples and examination preparation.</p></div>
+    <div class="card"><div class="icon">📚</div><h3>Literature</h3><p>Prose, drama, poetry and literary concepts.</p></div>
+    <div class="card"><div class="icon">💰</div><h3>Economics</h3><p>Simple explanations, examples and class exercises.</p></div>
+    <div class="card"><div class="icon">➕</div><h3>Mathematics</h3><p>Topics, worked examples and practice questions.</p></div>
+  </div>
+</section>
+
+<section id="schemes">
+  <h2>Teaching Resources</h2>
+  <div class="cards">
+    <div class="card"><div class="icon">📝</div><h3>Schemes of Work</h3><p>Organised schemes for different classes and subjects.</p></div>
+    <div class="card"><div class="icon">✏️</div><h3>Class Exercises</h3><p>Activities teachers can give learners in class.</p></div>
+    <div class="card"><div class="icon">🎓</div><h3>WAEC & JAMB</h3><p>Exam-focused practice and revision materials.</p></div>
+    <div class="card"><div class="icon">👩‍🏫</div><h3>Teachers' Resources</h3><p>Materials designed to make lesson preparation easier.</p></div>
+  </div>
+</section>
+
+<section>
+  <h2>Sample Lesson Note</h2>
+  <div class="note">
+    <h3>SS1 English Language — Parts of Speech</h3>
+    <p><strong>Objectives:</strong> By the end of the lesson, learners should be able to define parts of speech, identify common parts of speech and use them correctly in sentences.</p>
+    <p><strong>Content:</strong> Noun, pronoun, verb, adjective, adverb, preposition, conjunction and interjection.</p>
+    <p><strong>Class Activity:</strong> Identify the parts of speech in selected sentences.</p>
+    <p><strong>Evaluation:</strong> Give examples of five parts of speech and use each in a sentence.</p>
+  </div>
+</section>
+
+<section id="about">
+  <h2>About Easy to Teach Hub</h2>
+  <div class="note">
+    <p>Easy to Teach Hub is an educational resource platform created to help teachers prepare lessons and help learners understand school subjects more easily.</p>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Easy to Teach Hub — Making Teaching and Learning Easier</p>
+</footer>
+</body>
+</html>
