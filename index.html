@@ -3,45 +3,304 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Easy to Teach Hub</title>
+
+  <title>Easy to Teach Hub | Teaching & Learning Resources</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f7fb;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #123c69;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 30px;
+      margin-bottom: 5px;
+    }
+
+    header p {
+      font-size: 15px;
+      opacity: 0.9;
+    }
+
+    nav {
+      background: white;
+      padding: 12px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+
+    nav a {
+      color: #123c69;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 0 10px;
+    }
+
+    .hero {
+      background: #e8f1fa;
+      text-align: center;
+      padding: 55px 20px;
+    }
+
+    .hero h2 {
+      color: #123c69;
+      font-size: 32px;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      max-width: 650px;
+      margin: auto;
+      font-size: 17px;
+      color: #444;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    .section-title {
+      text-align: center;
+      color: #123c69;
+      margin-bottom: 10px;
+      font-size: 28px;
+    }
+
+    .section-text {
+      text-align: center;
+      color: #666;
+      margin-bottom: 30px;
+    }
+
+    .subjects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .subject-card {
+      background: white;
+      padding: 25px 20px;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      transition: transform 0.2s;
+    }
+
+    .subject-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .subject-card h3 {
+      color: #123c69;
+      margin-bottom: 10px;
+    }
+
+    .subject-card p {
+      color: #666;
+      font-size: 14px;
+      margin-bottom: 15px;
+    }
+
+    .button {
+      display: inline-block;
+      background: #123c69;
+      color: white;
+      padding: 9px 18px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    .button:hover {
+      background: #0b2949;
+    }
+
+    .about {
+      background: white;
+      padding: 35px 25px;
+      border-radius: 12px;
+      margin-top: 45px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+      text-align: center;
+    }
+
+    .about h2 {
+      color: #123c69;
+      margin-bottom: 15px;
+    }
+
+    footer {
+      background: #123c69;
+      color: white;
+      text-align: center;
+      padding: 25px 15px;
+      margin-top: 40px;
+    }
+
+    footer p {
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 25px;
+      }
+
+      .hero h2 {
+        font-size: 26px;
+      }
+
+      nav a {
+        margin: 0 5px;
+        font-size: 14px;
+      }
+    }
+  </style>
 </head>
+
 <body>
 
-  <h1>Easy to Teach Hub</h1>
+  <header>
+    <h1>Easy to Teach Hub</h1>
+    <p>Simple, clear and useful teaching and learning resources</p>
+  </header>
 
-  <p>Simple and helpful teaching and learning resources.</p>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="#subjects">Subjects</a>
+    <a href="#about">About</a>
+  </nav>
 
-  <h2>Welcome</h2>
+  <section class="hero">
+    <h2>Learn. Teach. Understand.</h2>
 
-  <p>
-    Welcome to Easy to Teach Hub, a platform for teachers and learners
-    to access simple and useful educational materials.
-  </p>
+    <p>
+      Welcome to Easy to Teach Hub, a platform created to make
+      teaching and learning easier through simple and useful
+      educational resources.
+    </p>
+  </section>
 
-  <h2>Lesson Notes</h2>
+  <section class="container" id="subjects">
 
-  <ul>
-    <li>Mathematics</li>
-    <li>English Language</li>
-    <li>Economics</li>
-    <li>Geography</li>
-    <li>Government</li>
-    <li>Literature in English</li>
-    <li>Biology</li>
-    <li>Chemistry</li>
-    <li>Physics</li>
-    <li>Basic Science</li>
-    <li>Agricultural Science</li>
-    <li>Civic Education</li>
-    <li>Computer Studies</li>
-    <li>Social Studies</li>
-    <li>Commerce</li>
-    <li>Accounting</li>
-    <li>Christian Religious Studies</li>
-    <li>Further Mathematics</li>
-</ul>
+    <h2 class="section-title">Our Subjects</h2>
 
-  <p>Making teaching and learning easier.</p>
+    <p class="section-text">
+      Explore lesson notes and educational materials by subject.
+    </p>
+
+    <div class="subjects">
+
+      <div class="subject-card">
+        <h3>Mathematics</h3>
+        <p>Simple mathematics lessons and exercises.</p>
+        <a href="#" class="button">Coming Soon</a>
+      </div>
+
+      <div class="subject-card">
+        <h3>English Language</h3>
+        <p>Grammar, vocabulary and language lessons.</p>
+        <a href="#" class="button">Coming Soon</a>
+      </div>
+
+      <div class="subject-card">
+        <h3>Economics</h3>
+        <p>Easy-to-understand Economics lesson notes.</p>
+        <a href="economics.html" class="button">View Notes</a>
+      </div>
+
+      <div class="subject-card">
+        <h3>Geography</h3>
+        <p>Simple Geography topics and explanations.</p>
+        <a href="#" class="button">Coming Soon</a>
+      </div>
+
+      <div class="subject-card">
+        <h3>Government</h3>
+        <p>Government concepts explained simply.</p>
+        <a href="#" class="button">Coming Soon</a>
+      </div>
+
+      <div class="subject-card">
+        <h3>Biology</h3>
+        <p>Clear Biology lessons for learners.</p>
+        <a href="#" class="button">Coming Soon</a>
+      </div>
+
+      <div class="subject-card">
+        <h3>Chemistry</h3>
+        <p>Simple Chemistry notes and explanations.</p>
+        <a href="#" class="button">Coming Soon</a>
+      </div>
+
+      <div class="subject-card">
+        <h3>Physics</h3>
+        <p>Physics concepts made easier to understand.</p>
+        <a href="#" class="button">Coming Soon</a>
+      </div>
+
+      <div class="subject-card">
+        <h3>Agricultural Science</h3>
+        <p>Useful Agricultural Science resources.</p>
+        <a href="#" class="button">Coming Soon</a>
+      </div>
+
+      <div class="subject-card">
+        <h3>Civic Education</h3>
+        <p>Lessons about citizenship and society.</p>
+        <a href="#" class="button">Coming Soon</a>
+      </div>
+
+      <div class="subject-card">
+        <h3>Commerce</h3>
+        <p>Simple Commerce lessons and examples.</p>
+        <a href="#" class="button">Coming Soon</a>
+      </div>
+
+      <div class="subject-card">
+        <h3>Accounting</h3>
+        <p>Basic Accounting concepts and exercises.</p>
+        <a href="#" class="button">Coming Soon</a>
+      </div>
+
+    </div>
+
+    <div class="about" id="about">
+      <h2>About Easy to Teach Hub</h2>
+
+      <p>
+        Easy to Teach Hub is an educational platform designed to
+        provide simple and helpful resources for teachers and learners.
+        Our goal is to make teaching and learning easier, clearer and
+        more accessible.
+      </p>
+    </div>
+
+  </section>
+
+  <footer>
+    <p>© 2026 Easy to Teach Hub. All rights reserved.</p>
+    <p>Making teaching and learning easier.</p>
+  </footer>
 
 </body>
 </html>
